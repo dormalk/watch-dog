@@ -10,7 +10,7 @@ function Grid() {
             {Array.from({ length: 15 }).map((_, idx) => (
                 <CardInfo   avatar='assets/placeholder_325_160.svg'
                             starts={5}
-                            title='Card'
+                            title='Card Tets'
                             body="This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."/>
             ))}
         </Row>
