@@ -1,0 +1,15 @@
+.card-info {
+    background-color: var(--primary-color);
+    border: white;
+    margin: 0.8rem 0.5rem ;
+    transition: all ease 0.4s;
+}
+
+.card-info .text-left{
+    text-align: left;
+}
+
+.card-info:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
