@@ -13,3 +13,7 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+.card-info .star{
+    color: var(--accent-color)
+}

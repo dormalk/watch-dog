@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Avatar from '../../commons/Avatar';
 import {AiFillStar} from 'react-icons/ai'
 import './CardInfo.css'
-import { SCHEDULE_NOW } from '../../utils/consts';
+import { CONTACT_NOW } from '../../utils/consts';
 
 class CardInfoParams {
     avatar?: string;
@@ -23,12 +23,12 @@ function CardInfo(params: CardInfoParams) {
                 <Col className='d-flex justify-content-start align-self-center'>
                     <Avatar src={params.avatar!} 
                                 size={35}
-                                style={{marginRight: '0.6rem'}}/>
+                                style={{marginLeft: '0.6rem'}}/>
                     <h4>{params.title}</h4>
                 </Col>
                 <Col>
                     {Array.from({ length: params.starts! }).map((_, idx) => (
-                        <AiFillStar/>
+                        <AiFillStar className='star'/>
                     ))}
                 </Col>
             </Card.Header>
@@ -40,7 +40,7 @@ function CardInfo(params: CardInfoParams) {
                         </Card.Text>
                     </Col>
                     <Col className='align-self-center'>
-                        <Button>{SCHEDULE_NOW}</Button>
+                        <Button variant='success'>{CONTACT_NOW}</Button>
                     </Col>
                 </Row>
             </Card.Body>

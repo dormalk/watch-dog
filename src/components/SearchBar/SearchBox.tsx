@@ -14,9 +14,10 @@ function SearchBox(){
     return (
         <Container style={{marginTop: '1.5rem'}}>
             <InputGroup className="mb-10">
-                <Button variant="outline-secondary">
-                    Button
-                </Button>
+                <Form.Control
+                    placeholder=''
+                    onChange={event => setSearch(event.target.value)}
+                ></Form.Control>
                 <DropdownButton
                     variant="outline-secondary"
                     title={dropdown}>
@@ -24,10 +25,9 @@ function SearchBox(){
                         <Dropdown.Item onClick={(event) => setDropdown(opt)}>{opt}
                         </Dropdown.Item>)}
                 </DropdownButton>
-                <Form.Control
-                    placeholder=''
-                    onChange={event => setSearch(event.target.value)}
-                ></Form.Control>
+                <Button variant="outline-secondary">
+                    Button
+                </Button>
             </InputGroup>
         </Container>
     )
